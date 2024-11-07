@@ -1,0 +1,802 @@
+@font-face {
+  font-family: inter_;
+  src: url(../Fonts/Inter/Inter-Italic-VariableFont_opsz\wght.ttf);
+  /* src: url("../Inter/Inter-VariableFont_slnt\,wght.ttf"); */
+}
+
+:root {
+  --color-primary: #2584ff;
+  --color-secondary: #00d9ff;
+  --color-accent: #ff3400;
+  --color-heading: #1b0760;
+  --color-body: #7b858b;
+  --color-body-darker: #5c5577;
+  --color-border: #ccc;
+  --border-radius: 30px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  position: relative;
+}
+/* Typograpghy */
+html {
+  /* 62.5% of 16px is 10px */
+  font-size: 62.5%;
+}
+body {
+  font-family: inter_, Arial, Helvetica, sans-serif;
+  color: var(--color-body);
+  font-size: 2.4rem;
+  line-height: 1.5;
+}
+.class-5 {
+  width: 95%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+.class-55 {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 95%);
+}
+.class-36 {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
+}
+.class-19 {
+  display: inline-block;
+}
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-heading);
+}
+p {
+  margin: 1rem 0;
+}
+ul {
+  list-style: none;
+}
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+}
+
+/* step 2 */
+/* linkes */
+a {
+  text-decoration: none;
+}
+.class-16 {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 900;
+}
+.class-16::after {
+  content: "→";
+  margin-left: 5px;
+  transition: margin 0.8s;
+}
+.class-16:hover {
+  opacity: 0.9;
+}
+.class-16:hover::after {
+  margin-left: 10px;
+}
+
+/* badge */
+
+.class-48 {
+  border-radius: 20px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  white-space: nowrap;
+}
+
+.class-14 {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.class-21 {
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+.class-23 {
+  font-size: 1.5rem;
+  padding: 0.2rem 1.1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .class-48 {
+    font-size: 1.5rem;
+  }
+  .class-23 {
+    font-size: 1.2rem;
+  }
+}
+
+/* lists */
+.class-53 {
+  padding: 0;
+  list-style-type: none;
+
+  color: var(--color-heading);
+}
+
+.class-51 {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  gap: 5rem;
+}
+.class-51 .class-29 {
+  display: inline-block;
+}
+
+.class-35 {
+  list-style-image: url("../images/tick.svg");
+  padding-left: 3rem;
+}
+.class-35 .class-29 {
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 1024) {
+  .class-35 .class-29 {
+    padding-left: 0rem;
+  }
+}
+
+/* icons */
+.class-24 {
+  width: 40px;
+  height: 40px;
+}
+
+.class-24-small {
+  width: 30px;
+  height: 30px;
+}
+
+.class-24--primary {
+  fill: var(--color-primary);
+
+  /* background-color: #00d9ff; */
+}
+
+.class-9 {
+  background-color: #f3f9fe;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Buttons */
+
+.class-18 {
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0.5rem 0.5rem;
+  outline: 0;
+  padding: 2rem 4vw;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  height: 63px;
+}
+
+.class-18 .class-24 {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
+.class-18--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.class-18--primary:hover {
+  background: #3a8ffd;
+}
+
+.class-18--secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.class-18--accent {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.class-10:hover {
+  background: #ec3000;
+  opacity: 0.9;
+}
+.class-10 {
+  background-color: var(--color-accent);
+  color: white;
+}
+.class-13 {
+  background: #fff;
+  color: var(--color-heading);
+  border: 2px solid var(--color-heading);
+}
+
+.class-13:hover {
+  background: var(--color-heading);
+  color: #fff;
+}
+
+.class-18--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.section-3 .class-18--secondary:hover {
+  background: #05cdf0;
+  border: none;
+}
+.class-18--block {
+  width: 100%;
+  display: inline-block;
+}
+@media screen and (min-width: 768px) and (max-width: 1022px) {
+  .section-3 .class-44 {
+    flex-direction: column;
+  }
+  .class-12 {
+    width: 70% !important;
+  }
+  footer,
+  footer h3 {
+    font-size: 1.5rem;
+  }
+  footer .class-56 {
+    margin-right: 3rem !important;
+    font-size: 1.5rem;
+  }
+  footer .class-56 img {
+    width: 15rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .class-18 {
+    font-size: 1.5rem;
+  }
+}
+
+/* input */
+.class-41 {
+  padding: 1.5rem 0.5rem 1.5rem 0.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  outline: 0;
+  color: var(--color-heading);
+  font-size: 1.5rem;
+}
+::placeholder {
+  color: #cdcdc7;
+}
+
+.class-6 {
+  max-width: 670px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  display: flex;
+  box-shadow: 0px 0px 20px 0px var(--color-border);
+}
+
+.class-6 .class-41 {
+  border: 0;
+  flex-grow: 1;
+}
+@media screen and (min-width: 768px) {
+  .class-41 {
+    padding: 2rem;
+    font-size: 2rem;
+  }
+}
+/* card */
+
+.class-45 {
+  border-radius: 8px;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  overflow: hidden;
+}
+
+.class-26,
+.class-15 {
+  padding: 2rem 3rem;
+}
+
+.class-45--primary .class-26 {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.class-45--secondary .class-26 {
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+.class-45--secondary .class-21 {
+  background-color: #02cdf1;
+}
+.class-45--primary .class-14 {
+  background-color: #126de4;
+}
+/* plan */
+
+.class-2 {
+  color: white;
+  margin: 0;
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+.class-22 {
+  font-size: 5rem;
+}
+
+.class-33 {
+  font-size: 2.4rem;
+  font-weight: 100;
+  opacity: 0.5rem;
+  margin-right: 1rem;
+}
+
+.class-4 {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  display: block;
+}
+
+.class-12 .class-29 {
+  margin-bottom: 2rem;
+  line-height: 2;
+}
+.class-12-popular {
+  transform: scale(1.1);
+}
+.class-12-popular .class-26 {
+  position: relative;
+}
+.class-12-popular .class-26::before {
+  content: url("../icons/popular.svg");
+  width: 40px;
+  display: inline-block;
+  position: absolute;
+  top: -6px;
+  right: 5%;
+}
+.class-12 {
+  transform: scale(1);
+  width: 30rem;
+  max-height: 800px;
+  margin: 2rem;
+}
+
+.class-12:hover {
+  transform: scale(1.05);
+}
+.class-12-popular:hover {
+  transform: scale(1.15);
+}
+@media screen and (min-width: 1024px) {
+  .class-2 {
+    font-size: 1.4rem;
+  }
+  .class-11 {
+    font-size: 5rem;
+  }
+  .class-33 {
+    font-size: 1.6rem;
+  }
+  .class-4 {
+    font-size: 1.7rem;
+  }
+}
+
+/* grid */
+.class-38 {
+  display: grid;
+  gap: 0.4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .class-32 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .class-31 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .class-44 {
+    flex-wrap: nowrap;
+  }
+}
+.class-28 {
+  padding: 10rem 0;
+}
+.class-7 {
+  text-align: center;
+  padding: 2rem 3rem 2rem;
+  height: 10rem;
+}
+.class-47 {
+  background-color: black;
+}
+.class-44 {
+  display: flex;
+}
+.class-44-col {
+  flex-direction: column;
+}
+.class-3 {
+  flex-direction: row-reverse;
+}
+.class-52 {
+  justify-content: space-between;
+  align-items: center;
+}
+.class-17 {
+  cursor: pointer;
+}
+/* header */
+header ul {
+  gap: 5rem;
+}
+header .class-56 {
+  width: 15rem;
+}
+.class-30 {
+  color: white;
+}
+header > img {
+  display: none;
+}
+/* section 1 */
+.section-1 .class-5 div {
+  width: 75%;
+  text-transform: capitalize;
+}
+.section-1 .class-5 img {
+  width: 80%;
+}
+.section-1 button {
+  margin: 5rem;
+}
+.section-1 button a {
+  color: white;
+}
+/* section 2 */
+.class-39 {
+  margin: 10rem 0;
+  text-align: center;
+}
+
+.section-2 p {
+  padding: 3rem 0;
+}
+
+/* section 3 */
+.section-3 ul {
+  list-style-type: initial;
+}
+.section-3 .class-44 {
+  justify-content: center;
+  gap: 3rem;
+}
+/*  section 4 */
+.section-4 section {
+  margin: 10rem 0;
+  text-align: start;
+  line-height: 2;
+}
+
+.class-1 {
+  width: 50%;
+}
+/* section-5 */
+.section-5 .class-44 .class-42 {
+  margin-left: -15rem;
+  width: 60%;
+}
+.section-5 .class-20 {
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 5rem;
+}
+.section-5 .class-20 div {
+  width: 364px;
+  text-align: start;
+}
+.section-5 .class-54 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 400px;
+}
+.section-5 .class-44 {
+  gap: 2rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1022px) {
+  .section-5 .class-44 .class-42 {
+    margin-left: -36rem;
+    width: 70rem;
+    height: 48rem;
+  }
+  .section-6 .class-8 img {
+    width: 334px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+/* section 6 */
+.section-6 .class-20 {
+  margin: 10rem 3rem;
+  box-shadow: 0px 0px 8px var(--color-border);
+  padding: 3rem;
+  gap: 3rem;
+}
+.section-6 .class-8 {
+  position: relative;
+}
+.section-6 .class-8 span {
+  position: absolute;
+  top: 3rem;
+  right: -2.5rem;
+  background: var(--color-accent);
+  fill: white;
+}
+.section-6 .class-49 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 2;
+  align-items: center;
+}
+.section-6 .class-49 h4 {
+  padding-left: 2rem;
+}
+.class-46 {
+  position: absolute;
+  bottom: -20rem;
+  z-index: 1;
+}
+.class-46 .class-5 {
+  background-color: var(--color-primary);
+  min-height: 178px;
+  gap: 20px;
+
+  padding: 4rem;
+}
+.class-46 .class-5,
+.class-46 .class-5 h3 {
+  color: white;
+}
+.class-46 .class-5 div {
+  text-align: start;
+}
+footer {
+  position: relative;
+  background-color: #232323;
+
+  height: 342px;
+}
+footer .class-5 {
+  padding-top: 10rem;
+}
+footer h3 {
+  color: white;
+}
+footer ul {
+  width: 200px;
+}
+footer .class-56 {
+  margin-right: 7rem;
+}
+footer .class-56 img {
+  width: 20rem;
+}
+/* kiiiiii */
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 55%; /* تصغير الخط */
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+  }
+
+  body {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+
+  /* الحاوية */
+  .class-5 {
+    width: 90%;
+    padding: 1rem 0;
+  }
+
+  /* الأزرار */
+  .class-18 {
+    font-size: 1.5rem;
+    padding: 1.5rem 3vw;
+    height: auto;
+  }
+  .class-18--stretched {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  /* الشارات */
+  .class-48 {
+    font-size: 1.4rem;
+    padding: 0.4rem 1rem;
+  }
+
+  /* قائمة الروابط */
+  .class-51 {
+    gap: 3rem;
+    margin-top: 2rem;
+  }
+  header.class-44 {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  header.class-44 ul {
+    display: none;
+  }
+  header > img{
+    display: block;
+  }
+  /* الصور */
+  .section-1 .class-5 img,
+  .section-5 .class-44 .class-42 {
+    width: 100%;
+  }
+  .section-5 .class-44 .class-42 {
+    margin: auto;
+  }
+  .class-1 {
+    width: 100%;
+  }
+  .section-5 .class-20 > div {
+    flex-direction: row;
+  }
+  /* المدخلات */
+  .class-41 {
+    font-size: 1.4rem;
+    padding: 1.2rem 0.4rem;
+  }
+
+  .class-6 {
+    max-width: 100%;
+    padding: 0.5rem;
+  }
+
+  /* البطاقات */
+  .class-26,
+  .class-15 {
+    padding: 1.5rem;
+  }
+
+  /* عرض العناصر على شكل عمودي */
+  .class-44 {
+    flex-direction: column;
+  }
+
+  /* تباعد في الأقسام */
+  .class-39 {
+    margin: 5rem 0;
+    text-align: center;
+  }
+
+  /* القسم 5 - النص */
+  .section-5 .class-20 div {
+    width: 100%;
+  }
+
+  /* تحسين الهوامش */
+  p {
+    margin: 0.8rem 0;
+  }
+
+  /* إعدادات الفوتر */
+  footer {
+    height: auto;
+    padding: 1.5rem;
+  }
+  footer ul {
+    width: 100%;
+    padding: 1rem;
+  }
+  footer .class-56 img {
+    width: 15rem;
+  }
+  .section-6 .class-20 .class-8 img {
+    width: 230px;
+  }
+  .section-6 .class-8 span {
+    width: 50px;
+    height: 50px;
+    right: 0.5rem;
+  }
+  .section-6 .class-8 span .class-24 {
+    width: 30px;
+  }
+  footer .class-5 {
+    padding-top: 18rem;
+  }
+  .section-6 .class-49 span {
+    flex-direction: row;
+  }
+}
+
+/* } */
+
+/* Increase button size and padding */
+.class-18 { font-size: 2rem; padding: 2.5rem 5vw; height: auto; }
+.class-18--stretched { padding-left: 7rem; padding-right: 7rem; }
+
+/* Increase general font sizes for readability */
+body { font-size: 2.6rem; }
+h1 { font-size: 7rem; }
+h2 { font-size: 5rem; }
+h3 { font-size: 3.5rem; }
